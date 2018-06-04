@@ -5,7 +5,7 @@ const handler = createHandler({ path: '/webhook', secret: 'kmall' })
 // 上面的 secret 保持和 GitHub 后台设置的一致
 
 const port = 9999
-const projects = ['backend-kmall','deploy']  
+const projects = ['kmall','deploy','deploy-kmall']  
 
 const projectHandler = (event, action) => {
 	const project = event.payload.repository.name
